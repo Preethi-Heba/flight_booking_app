@@ -1,0 +1,7 @@
+{% for booking in bookings %}
+    <p>
+        {{ booking.flight.flight_number }} |
+        {{ booking.flight.departure }} → {{ booking.flight.arrival }} |
+        {{ booking.flight.departure_time }}
+    </p>
+{% endfor %}

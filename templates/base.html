@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Flight Booking{% endblock %}</title>
+
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url("{{ url_for('static', filename='airport.jpg') }}");
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        color: white;
+    }
+
+    .glass-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        width: 400px;
+        margin: 80px auto;
+        text-align: center;
+animation: fadeIn 1.5s ease-in-out;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}}
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: none;
+    }
+
+    button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        background: #00bfff;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #009acd;
+    }
+
+    a {
+        color: #00bfff;
+        text-decoration: none;
+    }
+    </style>
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

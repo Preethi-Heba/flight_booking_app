@@ -1,0 +1,12 @@
+<h2>Confirm Flight Booking</h2>
+
+<p><strong>Flight Number:</strong> {{ flight.flight_number }}</p>
+<p><strong>From:</strong> {{ flight.departure }}</p>
+<p><strong>To:</strong> {{ flight.arrival }}</p>
+<p><strong>Departure Time:</strong> {{ flight.departure_time }}</p>
+
+<form method="POST">
+    <button type="submit">Confirm Booking</button>
+</form>
+
+<a href="{{ url_for('dashboard') }}">Cancel</a>

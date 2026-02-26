@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="glass-box">
+    <h2>✈ Night Sky Airlines</h2>
+
+    <form method="POST">
+        Username:<br>
+        <input name="username"><br>
+
+        Password:<br>
+        <input type="password" name="password"><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="/register">Register</a></p>
+</div>
+{% endblock %}
